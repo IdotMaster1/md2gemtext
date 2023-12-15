@@ -1,0 +1,1 @@
+gcc -o md2gemtext main.c fileio.c gemtext.c utils.c  -Iinclude -lmarkdown
