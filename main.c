@@ -20,10 +20,7 @@
 #include "gemtext.h"
 
 int main(int argc, char *argv[]) {
-    printf("MD2Gemtext | A Markdown to Gemtext converter\n");
-
     if (argc == 2){
-        printf("File name: %s\n", argv[1]);
         FILE *mdFile = openMarkdownFile(argv[1]);
         if (mdFile) {
             mdToGemtext(argv[1]);
